@@ -1,5 +1,5 @@
 const todoRoutes = require("express").Router();
-const dataModel = require("../Models/DataModel");
+const dataModel = require("../models/DataModel");
 
 todoRoutes.get("/getTodo", async (req, res) => {
   const { _id } = req.user;

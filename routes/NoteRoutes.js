@@ -1,5 +1,5 @@
 const noteRoutes = require("express").Router();
-const dataModel = require("../Models/DataModel");
+const dataModel = require("../models/DataModel");
 
 noteRoutes.get("/getNote", async (req, res) => {
   const { _id } = req.user;

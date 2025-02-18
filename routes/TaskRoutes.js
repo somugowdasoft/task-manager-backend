@@ -1,5 +1,5 @@
 const taskRoutes = require("express").Router();
-const dataModel = require("../Models/DataModel");
+const dataModel = require("../models/DataModel");
 
 taskRoutes.get("/getTask", async (req, res) => {
   const { _id } = req.user;
