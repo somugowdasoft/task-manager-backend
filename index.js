@@ -51,8 +51,6 @@ app.get("/", (req, res) => {
 
 app.post("/register", async (req, res) => {
   const { userName, email, password } = req.body;
-  console.log("req.body___________", req.body);
-
   const salt = await bcrypt.genSalt(10);
   const hashedPassword = await bcrypt.hash(password, salt);
   const newAuth = new authModel({
