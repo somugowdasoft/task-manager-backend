@@ -9,9 +9,9 @@ const bcrypt = require("bcrypt");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const passport = require("passport");
-const TodoRoutes = require("./Routes/TodoRoutes");
-const NoteRoutes = require("./Routes/NoteRoutes");
-const TaskRoutes = require("./Routes/TaskRoutes");
+const TodoRoutes = require("./routes/TodoRoutes");
+const NoteRoutes = require("./routes/NoteRoutes");
+const TaskRoutes = require("./routes/TaskRoutes");
 
 const PORT = 5000;
 
